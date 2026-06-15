@@ -75,17 +75,33 @@ h2 {
 .links a {
     text-decoration: none;
     color: white;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 12px;
     border-radius: 10px;
     transition: all 0.3s ease;
     font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.links a:hover {
-    background: rgba(255, 255, 255, 0.2);
+.links a.github-btn {
+    background: #181717;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.links a.github-btn:hover {
+    background: #2f2f2f;
     transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.links a.linkedin-btn {
+    background: #0077b5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.links a.linkedin-btn:hover {
+    background: #005f8d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .follow-btn {
@@ -127,8 +143,8 @@ h2 {
         </div>
 
         <div class="links">
-            <a href="https://github.com/Leslythomasmathew" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/lesly-mathew-149898327" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Leslythomasmathew" class="github-btn" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/lesly-mathew-149898327" class="linkedin-btn" target="_blank">LinkedIn</a>
         </div>
 
         <button class="follow-btn">Follow</button>
